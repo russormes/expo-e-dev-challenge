@@ -1,18 +1,25 @@
 # Exponential-e developer technical challenge
 
 We're hoping to see how you approach a challenge and what sort of standards you use in your code so please feel free to be as creative as you like.
-The job spec should help you understand what we'd like to see.
 
+The job spec will help you understand what we'd like to see.
+
+## Dependencies
+* NPM / Yarn
 ## Instructions
-
+From the project root folder:
 ```
-$ npm install -g bower
-$ bower install bootstrap
+$ npm install
 ```
+OR
+```
+$ yarn
+```
+Then it's over to you!
 
-Please demonstrate:
-* The ability to select supplier and product in the drop-down menus
-* A round-trip to a server pulling back the appropriate prices
+**Please demonstrate:**
+* Selecting suppliers and products in the drop-downs
+* A round-trip to a server pulling back prices
 * Displaying the returned data in the grid
 * Anything else you'd like to show us
 
