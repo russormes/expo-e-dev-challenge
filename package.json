@@ -2,7 +2,7 @@
   "name": "expo-e-dev-challenge",
   "version": "1.0.2",
   "description": "Exponential-e developer technical challenge",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- -R spec"

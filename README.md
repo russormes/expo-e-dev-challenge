@@ -1,36 +1,30 @@
 # Exponential-e developer technical challenge
+Below I outline a few of the features I have added to give an idea of how I approach an SPA and RESTful server.
 
-We're hoping to see how you approach a challenge and what sort of standards you use in your code so please feel free to be as creative as you like.
+## Client
+Off-line first using service worker API.
 
-The job spec will help you understand what we'd like to see.
+Progressive web app with a manifest file.
 
-## Dependencies
-* NPM / Yarn
-## Instructions
-From the project root folder:
+Open on mobile in chrome browser: https://russormes.github.io/expo-e-dev-challenge/
+
+In menu, select `add to homescreen`. You can now open the page as an app. Again, turn off data and wifi and re-open the app, it will load off-line.
+
+
+## Server
+```sh
+$ npm start
 ```
-$ npm install
-```
-OR
-```
-$ yarn
-```
-Then it's over to you!
+Open the app at `http:localhost:3000`.
+### Logging
 
-**Please demonstrate:**
-* Selecting suppliers and products in the drop-downs
-* A round-trip to a server pulling back prices
-* Displaying the returned data in the grid
-* Anything else you'd like to show us
+### Testing
+```sh
+$ npm t
+```
 
-### Sample data
-
-| Supplier    | Product      | Price (£) |
-| ------------|--------------|-----------|
-| New Co Ltd  | Small wongle | 5         |
-| New Co Ltd  | Large wongle | 8         |
-| New Co Ltd  | Super wongle | 12        |
-| Old Co Ltd  | Mini wongle  | 4         |
-| Old Co Ltd  | Small wongle | 6         |
-| Old Co Ltd  | Large wongle | 9         |
-| Old Co Ltd  | Super wongle | 13        |
+#### coverage
+```sh
+$ npm run coverage
+```
+Open the file 'coverage/lcov-report/logger/index.js.html' in your browser.
