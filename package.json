@@ -4,8 +4,10 @@
   "description": "Exponential-e developer technical challenge",
   "main": "server.js",
   "scripts": {
+    "build": "NODE_ENV=production browserify ./client/index.js | uglifyjs -cm > public/js/app.bundle.min.js",
     "test": "mocha",
-    "coverage": "istanbul cover _mocha -- -R spec"
+    "coverage": "istanbul cover _mocha -- -R spec",
+		"deploy": "npm run build && npm test && git add public && git commit -m 'deploy' && git subtree push --prefix public origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -24,11 +26,13 @@
     "jquery": "^3.2.1"
   },
   "devDependencies": {
+    "browserify": "^14.4.0",
     "chai": "^3.5.0",
     "istanbul": "latest",
     "mocha": "latest",
     "proxyquire": "^1.7.11",
     "sinon": "latest",
-    "sinon-chai": "latest"
+    "sinon-chai": "latest",
+    "uglify-es": "^3.0.15"
   }
 }
