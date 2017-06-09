@@ -5,10 +5,10 @@ const precacheFiles = [
 	'./',
 	'./index.html',
 
-	'css/bootstrap/dist/css/bootstrap.min.css',
+	'css/bootstrap.min.css',
 	'css/dashboard.css',
-	'css/jquery/dist/jquery.min.js',
-	'css/bootstrap/dist/js/bootstrap.min.js'
+	'js/jquery.min.js',
+	'js/bootstrap.min.js'
 
 ];
 
