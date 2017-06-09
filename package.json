@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ee-jake-d/expo-e-dev-challenge#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
     "jquery": "^3.2.1"
   }
 }
