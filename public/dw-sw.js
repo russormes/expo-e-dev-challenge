@@ -4,9 +4,11 @@ importScripts('js/sw-toolbox.js');
 const precacheFiles = [
 	'./',
 	'./index.html',
+	'img/expo-e-logo-white.png',
 
 	'css/bootstrap.min.css',
 	'css/dashboard.css',
+	'js/app.bundle.min.js',
 	'js/jquery.min.js',
 	'js/bootstrap.min.js'
 

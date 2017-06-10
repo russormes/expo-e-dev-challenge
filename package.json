@@ -4,6 +4,7 @@
   "description": "Exponential-e developer technical challenge",
   "main": "server.js",
   "scripts": {
+		"debug": "node --inspect server.js",
     "build": "NODE_ENV=production browserify ./client/index.js | uglifyjs -cm > public/js/app.bundle.min.js",
     "test": "mocha",
     "coverage": "istanbul cover _mocha -- -R spec",
