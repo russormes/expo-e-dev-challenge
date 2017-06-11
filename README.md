@@ -17,7 +17,7 @@ Off-line first using service worker API.
 To demo how this works, once you have loaded the page at `http:localhost:3000`, you can turn off the node server and reload the page and see that the application will still load. Even close the window and reopen it without the server running and you will still get the app.
 
 ### PWA
-Progressive web app with a manifest file.
+[Progressive web app](https://developers.google.com/web/progressive-web-apps/) with a manifest file.
 
 ![Debugging with chrome-devtools](/docs/manifest.png)
 
